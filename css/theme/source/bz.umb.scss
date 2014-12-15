@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/**
+ * UMB theme for reveal.js by Brian Zelip, 2014.
+ * 
+ * http://zelip.me
+ */
+
+// Include theme-specific fonts
+@import url(http://fonts.googleapis.com/css?family=Merriweather:300,400,700,300italic,400italic,700italic|Merriweather+Sans:300,400,700);
+
+// UMB colors
+$red: #C8102E;
+$yellow: #FFCD00;
+$yellow-alt: #ffd204;
+$dark-gray: #3a3a3a;
+$light-gray: #758694;
+$near-white: #f1f1f1;
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Merriweather', Georgia, serif;
+$mainColor: $dark-gray;
+$headingFont: 'Merriweather Sans', 'Helvetica Neue', sans-serif;
+$headingColor: $red;
+$headingLetterSpacing: -0.08em;
+$headingTextShadow: none;
+$backgroundColor: $dark-gray;
+$linkColor: $red;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: #134674;
+
+
+// Reveal template -----------------------------
+@import "../template/bz.umb.reveal";
+
+
+// Fix links so they are not cut off
+.reveal a:not(.image) {
+  line-height: 1.3em;
+}
+
+
+// Theme template ------------------------------
+@import "../template/bz.umb.theme";
+// ---------------------------------------------
